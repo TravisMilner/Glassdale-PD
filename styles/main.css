@@ -17,3 +17,19 @@ h1,h2,h3,h4,h5,h6 {
   font-family: "Patua One", serif;
   letter-spacing: 2px;
 }
+
+.criminalsContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+}
+
+.crimCard {
+	border: 2px solid black;
+	text-align: center;
+	flex-basis: 20%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	box-shadow: 5px 5px 5px black;
+}
