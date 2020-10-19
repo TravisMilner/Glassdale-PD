@@ -3,6 +3,6 @@ export const criminalHTML = (crimObj) => {
     <p>Age: ${crimObj.age}</p>
     <p>Crime: ${crimObj.conviction}</p>
     <p>Term Start: ${new Date(crimObj.incarceration.start).toLocaleDateString('en-US')}</p>
-    <p>Term End: ${new Date(crimObj.incarceration.start).toLocaleDateString('en-US')}</p>
+    <p>Term End: ${new Date(crimObj.incarceration.end).toLocaleDateString('en-US')}</p>
     </div>`
 }
