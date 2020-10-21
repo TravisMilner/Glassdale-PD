@@ -6,24 +6,18 @@ const eventHub = document.querySelector(".container")
 export const CriminalList = () => {
 
     getCriminals().then(() => {
-        const crimArray = useCriminals()
-
-        const crimContainer = document.querySelector(".criminalsContainer")
-
-        let buildCriminalHtml = ""
-
-        for (const criminal of crimArray) {
-            buildCriminalHtml += criminalHTML(criminal)
-        }
-        crimContainer.innerHTML += buildCriminalHtml
+       const crimArray = useCriminals()
+       render(crimArray)
     })
 }
 
 eventHub.addEventListener("crimeSelected", event => {
     console.log("crime selected event happened")
 
-    const criminalsArray = useCriminals()
-    // console.log(criminalsArray)
+if (event.detail.crimeThatWasChosen !== 0) {
+
+    const crimArray = useCriminals()
+    // console.lot crimArray)
 
     const convictionsArray = useConvictions();
 
@@ -32,24 +26,22 @@ eventHub.addEventListener("crimeSelected", event => {
     })
 
     console.log(convictionThatWasChosen)
-    const filteredCriminalsArray = criminalsArray.filter(criminalObj => {
+
+    const filteredCriminalsArray = crimArray.filter(criminalObj => {
     return criminalObj.conviction === convictionThatWasChosen.name
         
     })
-     const CriminalList = () => {
-
-        getCriminals().then(() => {
-            const crimArray = useCriminals()
-    
-            const crimContainer = document.querySelector(".criminalsContainer")
-    
-            let buildCriminalHtml = ""
-    
-            for (const criminal of crimArray) {
-                buildCriminalHtml += criminalHTML(criminal)
-            }
-            crimContainer.innerHTML += buildCriminalHtml
-        })
-    }
+    render(filteredCriminalsArray)
+}
 
 })
+
+const render = (crimArray) => {
+    const crimContainer = document.querySelector(".criminalsContainer")
+    let buildCriminalHtml = ""
+
+    for (const criminal of crimArray) {
+        buildCriminalHtml += criminalHTML(criminal)
+        crimContainer.innerHTML = buildCriminalHtml
+    }
+}
