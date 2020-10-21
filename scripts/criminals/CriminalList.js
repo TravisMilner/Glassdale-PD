@@ -36,6 +36,21 @@ if (event.detail.crimeThatWasChosen !== 0) {
 
 })
 
+eventHub.addEventListener("officerSelected", officerSelectedEventObj => {
+
+    const selectedOfficerName = officerSelectedEventObj.detail.officerName 
+
+    const criminalsArray = useCriminals()
+
+    const filteredArrayofCriminals= criminalsArray.filter(
+        (criminalObj) => {
+            return criminalObj.arrestingOfficer === selectedOfficerName
+        }
+    )
+
+    render(filteredArrayofCriminals)
+})
+
 const render = (crimArray) => {
     const crimContainer = document.querySelector(".criminalsContainer")
     let buildCriminalHtml = ""
