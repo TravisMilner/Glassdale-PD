@@ -1,0 +1,68 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "dateOfInterview": "10/22/20",
+      "timestamp": "999999",
+      "author": "Sherlock Holmes",
+      "suspect": "Professor Moriarty",
+      "note": "He's a bad dude!"
+    },
+    {
+      "dateOfInterview": "2020-10-22",
+      "timeStamp": 1603385716757,
+      "author": "Trav",
+      "suspect": "Felecia",
+      "note": "She is always guilty",
+      "id": 2
+    },
+    {
+      "dateOfInterview": "2020-10-20",
+      "timeStamp": 1603385829112,
+      "author": "Travis",
+      "suspect": "Bry",
+      "note": "Seems innocent but Not",
+      "id": 3
+    },
+    {
+      "dateOfInterview": "2020-10-21",
+      "timeStamp": 1603393379398,
+      "author": "Travis",
+      "suspect": "Felecia",
+      "note": "She be guilty for sure",
+      "id": 4
+    },
+    {
+      "dateOfInterview": "2020-10-21",
+      "timeStamp": 1603393390380,
+      "author": "Travis",
+      "suspect": "Felecia",
+      "note": "She be guilty for sure",
+      "id": 5
+    },
+    {
+      "dateOfInterview": "2020-10-21",
+      "timeStamp": 1603393391131,
+      "author": "Travis",
+      "suspect": "Felecia",
+      "note": "She be guilty for sure",
+      "id": 6
+    },
+    {
+      "dateOfInterview": "2020-10-22",
+      "timeStamp": 1603393414625,
+      "author": "trav",
+      "suspect": "felecia",
+      "note": "she is no longer guilty",
+      "id": 7
+    },
+    {
+      "dateOfInterview": "2020-10-22",
+      "timeStamp": 1603394487998,
+      "author": "Felecia",
+      "suspect": "Travis",
+      "note": "He's never guilty",
+      "id": 8
+    }
+  ]
+}
