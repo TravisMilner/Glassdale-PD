@@ -1,5 +1,6 @@
 import {getNotes, useNotes} from "./NoteDataProvider.js"
 import { NoteAsHTML } from "./Note.js"
+import { getCriminals, useCriminals } from "../criminals/CriminalProvider.js"
 
 
 
@@ -10,9 +11,11 @@ eventHub.addEventListener("noteStateChanged", () => NoteList())
 
 export const NoteList = () => {
     getNotes()
+    .then(() => getCriminals())
     .then(() => {
        const allNotes = useNotes()
-       render(allNotes)
+       const allCriminals = useCriminals()
+       render(allNotes, allCriminals)
     })
 }
 
@@ -21,10 +24,11 @@ export const NoteList = () => {
 
 
 
-const render = (notesArray) => {
+const render = (notesArray, criminalsArray) => {
     let notesHTMLRepresentations = ""
     for (const note of notesArray) {
-        notesHTMLRepresentations += NoteAsHTML(note)
+        const relatedCriminal = criminalsArray.find(criminal => criminal.id === note.criminalId)
+        notesHTMLRepresentations += NoteAsHTML(note, relatedCriminal)
 
     }
     notesContainer.innerHTML = `
