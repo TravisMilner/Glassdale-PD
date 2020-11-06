@@ -25,7 +25,7 @@ eventHub.addEventListener("click", clickEvent => {
     if(clickEvent.target.id === "saveNote") {
         const dateOfInterview = document.querySelector("#note__dateOfInterview").value 
         const author = document.querySelector("#note__author").value
-        const suspect = document.querySelector("#note__suspect").value
+        const suspect = parseInt(document.querySelector("#note__criminal").value)
         const note = document.querySelector("#note__note").value
         const timeStamp = Date.now()
 
