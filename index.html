@@ -16,12 +16,14 @@
                 <div class="filter filters__incarceration"></div>
                 <div class="filter filters__officer"></div>
                 <div class="filter filters__witnesses"></div>
+                <div class = "facility__button"></div>
             </div>
         </header>
         <article class="noteFormContainer"></article>
         <section class="investigation">
             <article class="criminalsContainer"></article>
             <article class="notesContainer">Notes</article>
+            <article class="facilityContainer"></article>
         </section>
         
     </main>
@@ -30,3 +32,11 @@
 </body>
 
 </html>
+
+<div id = "facility-${facObj.id}" class = "crimCard">
+    <h2>${facObj.facilityName}</h2>
+    <h3>Security Level: ${facObj.securityLevel}</h3>
+    <h3>Capacity: ${facObj.capacity}</h3>
+    <h3>Criminals Housed:</h3>
+
+</div>
