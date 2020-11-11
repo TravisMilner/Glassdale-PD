@@ -8,6 +8,7 @@ import { AlibiEventListener } from "./criminals/AlibiList.js";
 import { witnessButton } from "./witnesses/Witness.js";
 import { WitnessList } from "./witnesses/WitnessList.js";
 import { displayFacilityButton } from "./facilities/DisplayFacilityButton.js";
+import {  eventListener } from "./facilities/FacilityList.js";
 
 CriminalList();
 
@@ -26,3 +27,5 @@ witnessButton()
 WitnessList()
 
 displayFacilityButton()
+
+eventListener()
