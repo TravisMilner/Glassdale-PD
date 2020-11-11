@@ -16,6 +16,8 @@ export const NoteList = () => {
        const allNotes = useNotes()
        const allCriminals = useCriminals()
        render(allNotes, allCriminals)
+       console.log(allCriminals)
+       
     })
 }
 
@@ -35,3 +37,4 @@ const render = (notesArray, criminalsArray) => {
             ${notesHTMLRepresentations}
     `
 }
+
