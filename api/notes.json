@@ -1,22 +1,6 @@
 {
   "notes": [
     {
-      "id": 1,
-      "dateOfInterview": "10/22/20",
-      "timestamp": "999999",
-      "author": "Sherlock Holmes",
-      "suspect": "Professor Moriarty",
-      "note": "He's a bad dude!"
-    },
-    {
-      "dateOfInterview": "2020-10-22",
-      "timeStamp": 1603385716757,
-      "author": "Trav",
-      "suspect": "Felecia",
-      "note": "She is always guilty",
-      "id": 2
-    },
-    {
       "dateOfInterview": "2020-10-20",
       "timeStamp": 1603385829112,
       "author": "Travis",
@@ -79,14 +63,6 @@
       "suspect": 0,
       "note": "",
       "id": 10
-    },
-    {
-      "dateOfInterview": "2020-11-12",
-      "timeStamp": 1605123566243,
-      "author": "fasdfasf",
-      "suspect": 10,
-      "note": "asdfadgadg",
-      "id": 11
     }
   ]
 }

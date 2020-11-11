@@ -5,6 +5,7 @@ export const NoteAsHTML = (noteObject, criminalObj) => {
     <p>Date of Interview: ${noteObject.dateOfInterview}</p>
     <p>Time of Note Entered: ${new Date(noteObject.timeStamp).toLocaleDateString('en-US')}</p>
     <p>Note: ${noteObject.note}</p>
+    <button id="deleteNote--${noteObject.id}">Delete</button>
     </div>
  `
 }
